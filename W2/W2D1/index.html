@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input id="inputSearch" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button id="btnSearch" class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <h1>Photo Album</h1>
+            <div id="imagesRow" class="row">
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/37237947/pexels-photo-37237947.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="A captivating black and white abstract pattern resembling natural textures seen from above.">
+                        <div class="card-body">
+                            <p class="card-text">Veronika Benz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/18872916/pexels-photo-18872916.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="A tranquil landscape of a dry meadow under a clear blue sky, featuring lone tree and gentle hills.">
+                        <div class="card-body">
+                            <p class="card-text">Alex Ivanov</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/14781563/pexels-photo-14781563.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Calm sea view framed by pine trees, offering a serene coastal landscape.">
+                        <div class="card-body">
+                            <p class="card-text">bilal andırın</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/10963682/pexels-photo-10963682.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Vibrant forest scene showcasing lush greenery and sunlight filtering through trees.">
+                        <div class="card-body">
+                            <p class="card-text">Pierre-Louis CASERIO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/12249545/pexels-photo-12249545.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Vibrant moth resting on pine needles in a natural setting.">
+                        <div class="card-body">
+                            <p class="card-text">Muhammet TUĞ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/12377231/pexels-photo-12377231.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Dense greenery in a tranquil forest setting with tall trees and natural light.">
+                        <div class="card-body">
+                            <p class="card-text">Danil Lysov</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/20339651/pexels-photo-20339651.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="A breathtaking view of a whale's tail breaching the ocean surface, captured in black and white.">
+                        <div class="card-body">
+                            <p class="card-text">Jonathan Cooper</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/37821765/pexels-photo-37821765.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Detailed macro shot of a caterpillar on a grass blade showcasing nature's beauty.">
+                        <div class="card-body">
+                            <p class="card-text">Ceylon Frames</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/12871418/pexels-photo-12871418.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="A man in a striped shirt stands among lush green leaves, bathed in natural light.">
+                        <div class="card-body">
+                            <p class="card-text">Skildring by Andreas Ellegaard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/36287592/pexels-photo-36287592.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Close-up of a dried leaf showcasing detailed veins, highlighting nature's intricate patterns.">
+                        <div class="card-body">
+                            <p class="card-text">Jonathan Borba</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/13248795/pexels-photo-13248795.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Beautiful sunset over a tranquil river surrounded by lush forests and hills.">
+                        <div class="card-body">
+                            <p class="card-text">Büşra Ş</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/31972448/pexels-photo-31972448.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Red-haired woman in black fur wrap smiling amidst forest trees.">
+                        <div class="card-body">
+                            <p class="card-text">Mayara Caroline Mombelli</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/24206194/pexels-photo-24206194.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Aerial view of a tranquil lakeshore path bordered by lush green trees.">
+                        <div class="card-body">
+                            <p class="card-text">Studio Saiz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/10940007/pexels-photo-10940007.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Lush moss and sparse grass cover a rocky hillside, creating a natural textured landscape.">
+                        <div class="card-body">
+                            <p class="card-text">chickenbunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card"><img class="card-img-top"
+                            src="https://images.pexels.com/photos/28909955/pexels-photo-28909955.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                            alt="Vibrant aurora borealis illuminating the starry night sky with green hues and cosmic energy.">
+                        <div class="card-body">
+                            <p class="card-text">Adi K</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
