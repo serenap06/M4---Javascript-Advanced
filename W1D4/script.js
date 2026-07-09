@@ -8,10 +8,15 @@ const searchInput = document.getElementById('searchField')
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault()
     const searchValue = searchInput.value
-    getSongs(searchValue)
+    if (searchValue) { 
+        getSongs(searchValue) 
+    } else {
+    searchBox.innerHTML = 'No Result'
+    }
+
 })
 
-function getSongs(search = 'eminem') {
+function getSongs(search = '') {
     const urlApi = `https://striveschool-api.herokuapp.com/api/deezer/search?q=${search}`
 
     fetch(urlApi)
@@ -22,7 +27,7 @@ function getSongs(search = 'eminem') {
 getSongs()
 
 function listSongs(songs) {
-    searchBox.innerHTML = ""
+    searchBox.innerHTML = ''
     songs.forEach(song => {
         const card = cardSongs(song)
         searchBox.appendChild(card)
